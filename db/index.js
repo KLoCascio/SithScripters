@@ -1,16 +1,16 @@
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
-// mongoose
-// .connect('mongodb://127.0.0.1:27017/drinksDatabase')
-// .then(() => {
-//     console.log('Successfully Connected to MongoDB.')
-// })
-// .catch((e) => {
-//     console.error('Connection Error', e.message)
-// })
+mongoose
+.connect('mongodb://127.0.0.1:27017/drinksDatabase')
+.then(() => {
+    console.log('Successfully Connected to MongoDB.')
+})
+.catch((e) => {
+    console.error('Connection Error', e.message)
+})
 
-// const db = mongoose.connection
+const db = mongoose.connection
 
-// module.exports = db
 
-console.log(`hello`)
+module.exports = db
+
