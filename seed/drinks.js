@@ -14,7 +14,7 @@ const main = async () => {
     ]
 
     await Drink.insertMany(drinks)
-    console.log("Drink up apprenticec!")
+    console.log("Drink up apprentice!")
 }
 const run = async () => {
     await main()
