@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script defer source="scripts.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="scripts.js"></script>
     <title>Document</title>
 </head>
 <main>
@@ -12,8 +13,9 @@
     <body>
         <!-- Shows the get data from the database -->
         <div id="drinkOutput"> 
-            <button class="link"> Drinks </button>
         </div>
+        <input id="inputBar" type="text">
+        <button id="button">Press</button>
         <!-- Where the user will select the drink from a drop down -->
         <div id="drinkInput">
 
