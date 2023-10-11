@@ -2,7 +2,19 @@ const { Review } = require('../models')
 
 module.exports = {
     getReviews,
-    getReview
+    createReview
+}
+
+async function createReview (req, res) {
+    console.log('test', req.body)
+    try {
+        const review = await Review.create(req.body)
+        return res.status(201).json(review)
+
+
+    } catch (e) {
+        return res.status(500).json({ error: e.message})
+    }
 }
 
 async function getReviews(req, res) {
@@ -14,15 +26,5 @@ async function getReviews(req, res) {
     }
 }
 
-async function getReview(req, res) {
-    try {
-        const id = req.params.id
-        const review = await Review.findById(id)
-        if (review) {
-            return res.json(review)
-        }
-        return res.status(404).send(`${Review} wasn't acceptable.`)
-    } catch (e) {
-        return res.status(500).send(e.message)
-    }
-}
+
+

@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
 app.get('/drinks', drinkController.getDrinks)
 app.get('/drinks/:id', drinkController.getDrink)
 app.get('/reviews', reviewController.getReviews)
-app.get('/reviews/:id', reviewController.getReview)
+// app.get('/reviews/:id', reviewController.getReview)
+app.post('/reviews', reviewController.createReview)
+
+
+
 
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`))
