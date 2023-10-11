@@ -3,12 +3,14 @@ const {Review, Drink} = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-    const ww = Drink.find({name: 'Wookiee Wake-Up'})
-    const tf = Drink.find({name: 'The Force'})
-    const ss = Drink.find({name: 'Sith Surge'})
-    const jj = Drink.find({name: 'Jedi Jolt'})
 
     const main = async () => {
+        const ww = await Drink.find({name: 'Wookiee Wake-Up'})
+        const tf = await Drink.find({name: 'The Force'})
+        const ss = await Drink.find({name: 'Sith Surge'})
+        const jj = await Drink.find({name: 'Jedi Jolt'})
+
+
         const reviews = [
         {
             drinkName: ss[0]._id,
