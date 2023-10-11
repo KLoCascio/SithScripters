@@ -10,7 +10,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
         const ss = await Drink.find({name: 'Sith Surge'})
         const jj = await Drink.find({name: 'Jedi Jolt'})
 
-
         const reviews = [
         {
             drinkName: ss[0]._id,
