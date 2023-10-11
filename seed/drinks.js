@@ -9,19 +9,19 @@ const main = async () => {
         { 
             name: 'Sith Surge', 
             description: 'Feel a surge of power on your Darkest Days! Whether you are planning for galactic domination, wiping out Jedi and rebellion scum, or simply striving for unlimited power, "Sith Surge" is your ally. The real power is on the dark side!', 
-            image: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Aloe_vera_flower_inset.png' },
+            image: './assets/SithSurge.jpeg' },
         { 
             name: 'The Force', 
             description: 'Feel the power of the galaxy coursing through you with "The Force". This energizing elixir is not just an energy drink; its an experience that will awaken The Force within.', 
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg/2560px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg' },
+            image: './assets/TheForce.jpeg' },
         { 
             name: 'Jedi Jolt', 
             description: 'Unleash your inner Jedi with "Jedi Jolt", the energy drink that empowers you to reach new heights. This galactic elixir is inspired by the legendary warriors of the Jedi Order, known for their strength, focus, and unwavering determination... Even though they were eventually wiped out by the Dark Side. Minor detail', 
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Dypsis_lutescens1.jpg/1280px-Dypsis_lutescens1.jpg' },
+            image: './assets/JediJolt.jpeg' },
         { 
             name: 'Wookiee Wake-Up', 
             description: 'Prepare to awaken your inner Wookiee! This energy drink packs a punch as mighty as Chewbaccas roar. Crafted with the spirit of Kashyyyk and the strength of Wookiee warriors, this energizing elixir will help you start your day with a mighty growl!', 
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Hierbabuena_0611_Revised.jpg/1920px-Hierbabuena_0611_Revised.jpg' },
+            image: './assets/WookieWakeUp.jpeg' },
         
     ]
 
