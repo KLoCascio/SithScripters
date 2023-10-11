@@ -62,7 +62,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 ];
 
 await Review.insertMany(reviews)
-    console.log("Drink up apprenticec!")
+    console.log("Drink up apprentice!")
 }
 const run = async () => {
     await main()
