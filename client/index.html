@@ -6,28 +6,35 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="scripts.js"></script>
-    <title>Document</title>
+    <title>Star Wars Energy Drinks</title>
 </head>
-<main>
-    
-    <body>
+<body>
+    <header class="header">
         <nav>
             <ul>
-                <a href="index.html"><li>Drinks</li></a>
-                <a href="review.html"><li>Review</li></a>
-                <a href="about.html"><li>About</li></a>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
-        <h1>Drink / Review Title</h1>
-        <!-- Shows the get data from the database -->
-        <div id="drinkOutput"> 
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Star Wars logo">
         </div>
-        <input id="inputBar" type="text">
-        <button id="button">Press</button>
-        <!-- Where the user will select the drink from a drop down -->
-        <div id="drinkInput">
-
-        </div>
-    </body>
-</main>
+    </header>
+    <section class="hero">
+        <h1>Star Wars Energy Drinks</h1>
+        <p>Unleash the real power of The Force</p>
+        <a href="#" class="cta-button">Unleash The Force</a>
+    </section>
+    <audio id="audio1" src=“https://youtu.be/a3IvJIQeMBE” type="audio/mpeg"></audio>
+        <!-- Add additional source elements for different audio formats if needed -->
+        Your browser does not support the audio element.
+    <script>
+        const audioMainScreen = document.getElementById('darth-vader-audio');
+    
+        // Autoplay the audio when the page loads
+        audio.play();
+    </script>
+        
+</body>
 </html>
