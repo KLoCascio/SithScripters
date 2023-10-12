@@ -8,10 +8,6 @@ button.addEventListener('click', async () => {
     let textInput = document.querySelector("#inputBar").value
 
     let response = await axios.get(`http://localhost:3001/${textInput}`)
-    console.log(response)
-
-    console.log(response.data[1].drinkName)
-
-  
+    
 }
 )
