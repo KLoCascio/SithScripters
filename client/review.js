@@ -19,16 +19,16 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // Function to add a new review to the database
   const addReview = async (text, reviewer) => {
-      const response = await axios.post(`http://localhost:3001/reviews`, { text, reviewer });
-      const newReview = response.data;
-      reviews.push(newReview);
-      displayReviews();
-  };
+      const response = await axios.post(`http://localhost:3001/reviews`, { text, reviewer })
+      const newReview = response.data
+      reviews.push(newReview)
+      displayReviews()
+  }
 
   // Function to display reviews
   const displayReviews = () => {
       const reviewList = document.getElementById("reviewList");
-      reviewList.innerHTML = "";
+      reviewList.innerHTML = " ";
 
       reviews.forEach((review, index) => {
           const listItem = document.createElement("li");
@@ -44,9 +44,6 @@ document.addEventListener('DOMContentLoaded', async function() {
       reviews[index].text = newText;
       displayReviews();
   };
-
-
-    let send = await axios.post(`http://localhost:3001/reviews`, data)
 
   // Function to delete a review
   const deleteReview = async (index) => {
@@ -89,5 +86,4 @@ document.addEventListener('DOMContentLoaded', async function() {
       }
   });
 
-  displayReviews();
-});
+  displayReviews()
