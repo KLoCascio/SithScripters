@@ -45,6 +45,52 @@ h1 {
     margin: 10px 0;
 }
 
+.modal {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.menu-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-content img {
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-content h2,
+.menu-content p {
+    margin-top: 10px;
+}
+
 p {
     font-size: 24px;
     margin: 10px 0;
@@ -68,3 +114,4 @@ p {
 .cta-button:hover {
     background: rgb(43, 116, 226);
 }
+
