@@ -1,6 +1,8 @@
 # SithScripters
 Brought to you by Death Star Developers
 
+![Alt text](WelcomePage.png)
+
 Group Members
 Kyndal LoCascio
 Robert Castor
@@ -9,24 +11,21 @@ Justice Combs
 
 Functionality:
 An Star Wars Themed Energy Drink and Reviews page.
-Create reviews for our Star Wars Energy Drinks.
-Read drink descriptions, and read reviews from database.
-Update reviews with new reviews from the front-end.
-Delete a review from front-end.
+1. Create reviews for our Star Wars Energy Drinks.
+2. Read drink descriptions, and read reviews from database.
+3. Update reviews with new reviews from the front-end.
+4. Delete a review from front-end.
 
-Assets:
+//DESIGN CONCEPTS//
+Backgrounds:
+1. ![Alt text](Drinks.jpeg)
+2. ![Alt text](Drinks2.jpeg)
 
-ADVERT.
-![Alt text](About.jpeg) 
+Drinks:
+1. ![Alt text](SithSurge.jpeg)
+2. ![Alt text](TheForce.jpeg)
+3. ![Alt text](JediJolt.jpeg)
+4. ![Alt text](WookieWakeUp.jpeg)
 
-BACKGROUND ASSETS.
-![Alt text](Drinks.jpeg) 
-![Alt text](Drinks2.jpeg) 
-
-IND. DRINKS.
-![Alt text](JediJolt.jpeg) 
-![Alt text](SithSurge.jpeg) 
-![Alt text](TFWW.jpeg) 
-![Alt text](TheForce.jpeg) 
-![Alt text](WookieWakeUp.jpeg)
-
+Advertisement:
+1.![Alt text](About.jpeg)
