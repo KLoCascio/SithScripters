@@ -30,29 +30,6 @@ nav {
     box-shadow: 5px 10px 55px;
 }
 
-#moneyIsPain {
-    display: flex;
-    justify-content: center;
-    margin-top: 20%;
-
-}
-
-#drinkOutput {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#reviewForm {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 a {
     text-decoration: none;
     color: gold;
@@ -73,28 +50,9 @@ select {
     border-radius: 5px;
 }
 
-#reviewList {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
 
-}
 
-#reviewList li {
-    list-style: none;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 label {
     color: red;
@@ -113,21 +71,8 @@ label {
 }
 #button:hover {background-color: #3e8e41}
 
-#reviewList button {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-#reviewList button.editReview {
-    background-color: #007bff;
-    color: white;
-}
 
-#reviewList button.deleteReview {
-    background-color: #ff6347;
-    color: white;
-}
+
+
 
