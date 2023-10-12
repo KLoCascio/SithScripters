@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="review.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="review.js"></script>
-    <title>Document</title>
+    <title>Review Page</title>
 </head>
 <body>
     <nav>
         <ul>
-            <a href="index.html"><li>Drinks</li></a>
-            <a href="review.html"><li>Review</li></a>
-            <a href="about.html"><li>About</li></a>
+            <li><a href="index.html">Drinks</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <div id="moneyIsPain">
+    <h1>Drink / Review Title</h1>
+
+    <div id="drinkOutput">
+        
+    </div>
+
+    <div id="reviewForm">
         <form id="form" method="post">
-            <select id="drinks" name="drinkName"> 
+            <select id="drinks" name="drinkName">
+                
             </select>
             <select id="select" name="score">
                 <option value="1">1</option>
@@ -29,9 +35,12 @@
                 <option value="5">5</option>
             </select>
             <textarea name="comment" id="comment" placeholder="Comment here!" cols="25" rows="5"></textarea>
-            <button type="submit" id="button">Press</button>
+            <button type="submit" id="button">Submit Review</button>
         </form>
     </div>
-    <div id="display">dfsfsdfsdf</div>
+
+    <div id="reviewList">
+        <!-- This is where the list of reviews will be displayed -->
+    </div>
 </body>
 </html>
