@@ -1,17 +1,21 @@
 document.addEventListener('DOMContentLoaded', async function() {
-  const drinks = document.querySelector('#drinks');
-  const display = document.querySelector('#display');
-  let response = await axios.get(`http://localhost:3001/drinks`);
-  let responseRev = await axios.get(`http://localhost:3001/reviews`);
 
-  response.data.forEach(drink => {
-      const option = document.createElement('option');
-      option.value = drink._id;
-      option.id = drink._id;
-      option.textContent = drink.name;
-      drinks.appendChild(option);
-  });
+    const drinks = document.querySelector('#drinks')
+    const display = document.querySelector('#display')
+    let response = await axios.get(`http://localhost:3001/drinks`)
+    let responseRev = await axios.get(`http://localhost:3001/reviews`)
+    let send = await axios.post(`http://localhost:3001/reviews`, data)
+    
+    console.log(responseRev.data)
+    response.data.forEach(drink => {
+        const option = document.createElement('option')
+        option.value = drink._id
+        option.id = drink._id
+        option.textContent = drink.name
+        drinks.appendChild(option)
+    });
 
+})
 
   // Function to add a new review to the database
   const addReview = async (text, reviewer) => {
@@ -40,6 +44,9 @@ document.addEventListener('DOMContentLoaded', async function() {
       reviews[index].text = newText;
       displayReviews();
   };
+
+
+    let send = await axios.post(`http://localhost:3001/reviews`, data)
 
   // Function to delete a review
   const deleteReview = async (index) => {

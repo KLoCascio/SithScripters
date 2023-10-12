@@ -1,37 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+    height: 100vh;
+    width: 100vw;
+   
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/Drinks.jpeg');
 }
-
 nav {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 10px 2px 10px;
+    top: 0px;
+    left: 0px;
+    background-image: url('https://i.pinimg.com/originals/89/b4/77/89b4773eed5f72cf6e153c005d4a21e6.png');
+    height: 60px;
+    margin: 0px auto 30px auto;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+#form {
+    display: flex;
+    border-radius: 5%;
+    background-image: url('https://i.pinimg.com/originals/89/b4/77/89b4773eed5f72cf6e153c005d4a21e6.png');
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+    box-shadow: 10px 10px;
+    box-shadow: 5px 10px 55px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+#moneyIsPain {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
 }
 
 #drinkOutput {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #reviewForm {
@@ -42,6 +51,17 @@ h1 {
     margin-top: 20px;
     max-width: 600px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+    font-size: 20px;
+    font-family: starjedi;
+}
+
+select {
+   margin: 10px;
 }
 
 #drinks, #select, #comment, #button {
@@ -61,6 +81,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: white;
+
 }
 
 #reviewList li {
@@ -74,6 +95,23 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
+
+label {
+    color: red;
+    margin: -10px auto;
+    font-family: starjedi;
+}
+#button {
+    margin: auto;
+    border: none;
+    background-color: black;
+    height: 30px;
+    width: 80%;
+    color: red;
+    font-family: starjedi;
+    background-color: dra;
+}
+#button:hover {background-color: #3e8e41}
 
 #reviewList button {
     margin: 0 5px;
