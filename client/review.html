@@ -19,7 +19,8 @@
     </nav>
     <div id="moneyIsPain">
         <form id="form" method="post">
-            <select id="drinks" name="drinkName"> 
+            <label for="drinks">Tell us about your experience!</label><br>
+            <select id="drinks" name="drinkName" value="drinks"> 
             </select>
             <select id="select" name="score">
                 <option value="1">1</option>
@@ -29,9 +30,9 @@
                 <option value="5">5</option>
             </select>
             <textarea name="comment" id="comment" placeholder="Comment here!" cols="25" rows="5"></textarea>
-            <button type="submit" id="button">Press</button>
+            <button type="submit" id="button">Submit!</button>
         </form>
     </div>
-    <div id="display"></div>
+    <div id="display"><p id="para"></p></div>
 </body>
 </html>

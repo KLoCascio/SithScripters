@@ -10,6 +10,7 @@ body {
 nav {
     position: fixed;
     width: 100%;
+    box-shadow: 10px 2px 10px;
     top: 0px;
     left: 0px;
     background-image: url('https://i.pinimg.com/originals/89/b4/77/89b4773eed5f72cf6e153c005d4a21e6.png');
@@ -19,18 +20,20 @@ nav {
 
 #form {
     display: flex;
-    
+    border-radius: 5%;
     background-image: url('https://i.pinimg.com/originals/89/b4/77/89b4773eed5f72cf6e153c005d4a21e6.png');
     background-position: center;
     flex-direction: column;
     justify-content: center;
     width: 40%;
     padding: 20px;
+    box-shadow: 10px 10px;
+    box-shadow: 5px 10px 55px;
 }
 #moneyIsPain {
     display: flex;
     justify-content: center;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 ul {
     display: flex;
@@ -44,20 +47,30 @@ li {
 a {
     text-decoration: none;
     color: gold;
-    font-size: 30px;
+    font-size: 20px;
     font-family: starjedi;
 }
 select {
-    margin: 3px;
+   margin: 10px;
 }
 textarea{
     margin: 10px;
 }
+label {
+    color: red;
+    margin: -10px auto;
+    font-family: starjedi;
+}
 #button {
     margin: auto;
+    border: none;
+    background-color: black;
     height: 30px;
-    width: 70px;
+    width: 80%;
+    color: red;
+    font-family: starjedi;
+    background-color: dra;
 }
-
+#button:hover {background-color: #3e8e41}
 
 
