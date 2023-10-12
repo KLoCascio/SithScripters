@@ -1,16 +1,8 @@
-let button = document.querySelector("#button")
 
 
-button.addEventListener('click', async () => {
-
-    
-    //where does this need to be scoped?
-    let textInput = document.querySelector("#inputBar").value
-
-    let response = await axios.get(`http://localhost:3001/${textInput}`)
-    
-}
-)
+const drinksBtn = document.getElementById("drinksModalBtn")
+const modal = document.getElementById("startModal")
+let closeBtn = document.getElementsByClassName("close")[0]
 
 const menuContent = document.querySelector(".menu-content")
 menuContent.innerHTML = ` 
@@ -37,3 +29,17 @@ menuContent.innerHTML = `
     <h2>Wookiee Wake-Up</h2>
     <p>Prepare to awaken your inner Wookiee! This energy drink packs a punch as mighty as Chewbaccas roar. Crafted with the spirit of Kashyyyk and the strength of Wookiee warriors, this energizing elixir will help you start your day with a mighty growl!<p>
     </div>`
+
+drinksBtn.addEventListener("click", function () {
+    modal.style.display = "block"
+})
+
+closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+})
+
+window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+})

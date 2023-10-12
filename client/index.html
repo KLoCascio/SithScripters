@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-    <script defer src="scripts.js"></script>
     <title>Star Wars Energy Drinks</title>
 
 </head>
+
+
+<header class="header">
+    <nav>
+        <ul>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="http://127.0.0.1:5500/client/review.html">Review</a></li>
+            <li><a href="http://127.0.0.1:5500/client/about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png"
+            alt="Star Wars logo">
+    </div>
+</header>
+
+<div id="startModal" class="modal">
+    <div class="menu-content">
+        <span class="close">&times;</span>
+        <div class="menuModal"></div>
+    </div>
+</div>
+
 <body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li><a href="#">Drinks</a></li>
-                <li><a href="#">Review</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Star Wars logo">
-        </div>
-    </header>
-    <section class="hero">
+
+    <div class="hero">
         <h1>Star Wars Energy Drinks</h1>
         <p>Unleash the real power of The Force</p>
-        <a href="#" class="cta-button">Unleash The Force</a>
-    </section>
-    <audio id="audio1" src=“https://youtu.be/a3IvJIQeMBE” type="audio/mpeg"></audio>
-        <!-- Add additional source elements for different audio formats if needed -->
-        Your browser does not support the audio element.
-    
-          <button id="drinksModal">Learn More</button>
-            <div id="startModal" class="modal">
-                <div class="menu-content">
-                    <span class="close">&times;</span>
-                    <div class="menuModal">
-                        
-                    </div>
-                </div>
-            </div>
-  
-  <script>
-        const audioMainScreen = document.getElementById('darth-vader-audio');
-    
-        // Autoplay the audio when the page loads
-        audio.play();
-    </script>
-        
+        <button class="cta-button" id="drinksModalBtn">Unleash The Force</button>
+    </div>
+
+    <script defer src="scripts.js"></script>
 </body>
+
 </html>

@@ -45,8 +45,28 @@ h1 {
     margin: 10px 0;
 }
 
+p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff0101;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: rgb(43, 116, 226);
+}
+
 .modal {
-    display: grid;
+    display: none;
     place-items: center;
     position: fixed;
     z-index: 1;
@@ -91,27 +111,16 @@ h1 {
     margin-top: 10px;
 }
 
-p {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #ff0101;
-    color: #fff;
-    text-decoration: none;
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
     font-weight: bold;
-    font-size: 18px;
-    border-radius: 5px;
 }
 
-#audio {
-    display: none;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-.cta-button:hover {
-    background: rgb(43, 116, 226);
-}
-
