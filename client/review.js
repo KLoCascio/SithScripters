@@ -1,7 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', async function() {
     const drinks = document.querySelector('#drinks')
+    const display = document.querySelector('#display')
     let response = await axios.get(`http://localhost:3001/drinks`)
+    let responseRev = await axios.get(`http://localhost:3001/reviews`)
+    
+    
     response.data.forEach(drink => {
         const option = document.createElement('option')
         option.value = drink._id
@@ -9,6 +13,12 @@ document.addEventListener('DOMContentLoaded', async function() {
         option.textContent = drink.name
         drinks.appendChild(option)
     });
+
+
+    
+    
+
+
 })
 
 const form = document.querySelector('#form')
@@ -26,7 +36,7 @@ form.addEventListener('submit', async function(e) {
     let send = await axios.post(`http://localhost:3001/reviews`, data)
 
 
-    console.log(send) 
+    
 
 })
     

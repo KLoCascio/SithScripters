@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-image: url('assets/Drinks.jpeg');
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+}
+#moneyIsPain {
+    display: flex;
+    justify-content: center;
+    
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    list-style: none;    
+}
+a {
+    text-decoration: none;
+
+}
+select {
+    margin: 3px;
+}
+textarea{
+    margin: 10px;
+}
+#button {
+    margin: auto;
+    height: 30px;
+    width: 70px;
+}
+
+
+
